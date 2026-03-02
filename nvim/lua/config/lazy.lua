@@ -1,4 +1,4 @@
--- Bootstrap lazy.nvim
+-- Bootstrap lazy.nviwi
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = "https://github.com/folke/lazy.nvim.git"
@@ -34,6 +34,7 @@ require("lazy").setup({
         vim.cmd("colorscheme koda")
       end,
     },
+    {'nvim-telescope/telescope.nvim', version = '*', dependancies = {'nvim-lua/plentary.nvim', {'nvim-telescope/telescope/fzf-native.nvim', build = 'make'}}},
     {"lewis6991/gitsigns.nvim"}
 
   },
