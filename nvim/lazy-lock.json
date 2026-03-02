@@ -1,0 +1,5 @@
+{
+  "gitsigns.nvim": { "branch": "main", "commit": "9f3c6dd7868bcc116e9c1c1929ce063b978fa519" },
+  "koda.nvim": { "branch": "main", "commit": "c94415d9c63c1519216fe195ae957974e7e3250c" },
+  "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" }
+}
