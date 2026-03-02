@@ -25,22 +25,14 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
   spec = {
     -- import your plugins
-    {
-      "oskarnurm/koda.nvim",
-      lazy = false, -- make sure we load this during startup if it is your main colorscheme
-      priority = 1000, -- make sure to load this before all the other start plugins
-      config = function()
-        --  require("koda").setup({ transparent = true })
-        vim.cmd("colorscheme koda")
-      end,
-    },
+    {"miikanissi/modus-themes.nvim", priority=1000},
     {'nvim-telescope/telescope.nvim', version = '*', dependancies = {'nvim-lua/plentary.nvim', {'nvim-telescope/telescope/fzf-native.nvim', build = 'make'}}},
     {"lewis6991/gitsigns.nvim"}
 
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
-  --install = { colorscheme = { "habamax" } },
+  install = { colorscheme = { "habamax" } },
   -- automatically check for plugin updates
   checker = { enabled = true },
 })
